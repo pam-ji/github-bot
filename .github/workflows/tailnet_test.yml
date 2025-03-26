@@ -18,7 +18,6 @@ jobs:
           tags: tag:ci                                        	# <<<--- THIS IS IMPORTANT
 
       - name: ping                                           	# <<<--- LETS PING A SERVER FOR TESTING
-        if: always()
         run: |
-          curl https://dcworkshop1.tailbf22ca.ts.net/
+          curl +X https://dcworkshop1.tailbf22ca.ts.net/
 
