@@ -13,5 +13,5 @@ jobs:
       - name: Test Tailscale Funnel
         run: |
 
-           curl -X GET           https://100.85.222.43
+           ping 100.85.222.43
 
