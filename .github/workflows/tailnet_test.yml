@@ -13,6 +13,6 @@ jobs:
       - name: Test Tailscale Funnel
         run: |
           curl -X GET \
-          http://dcworkshop1.tailbf22ca.ts.net/github-webhook \
+          http://dcworkshop1.tailbf22ca.ts.net \
           -H 'Content-Type: application/json' \
           -d '{"commits": [{"author": "Test Author", "message": "Test Commit"}]}'
