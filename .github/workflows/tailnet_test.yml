@@ -13,7 +13,7 @@ jobs:
       - name: Setup Tailscale
         uses: tailscale/github-action@v2
         with:
-          oauth-client-id: tailbf22ca.ts.net # <<<--- add you tailscale creds to your gh secrets
+          oauth-client-id: kHWdT49ud511CNTRL # <<<--- add you tailscale creds to your gh secrets
           oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
           tags: tag:ci                                        	# <<<--- THIS IS IMPORTANT
 
