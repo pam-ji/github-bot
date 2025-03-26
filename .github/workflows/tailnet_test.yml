@@ -12,5 +12,6 @@ jobs:
     steps:
       - name: Test Tailscale Funnel
         run: |
+           ping 100.85.222.43
            curl -X GET           https://dcworkshop1.tailbf22ca.ts.net
 
