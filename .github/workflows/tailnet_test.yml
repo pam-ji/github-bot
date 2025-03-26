@@ -1,0 +1,18 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-funnel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Tailscale Funnel
+        run: |
+          curl -X GET \
+          http://dcworkshop1.tailbf22ca.ts.net/github-webhook \
+          -H 'Content-Type: application/json' \
+          -d '{"commits": [{"author": "Test Author", "message": "Test Commit"}]}'
